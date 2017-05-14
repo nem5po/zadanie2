@@ -6,7 +6,7 @@ Sala::Sala()
 {
 	liczbaLawek = 10;
 	liczbaKrzesel = 2 * liczbaLawek;
-	cout << "ok" << endl;
+	//cout << "ok" << endl;
 }
 
 

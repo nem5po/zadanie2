@@ -146,6 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Aula.h" />
     <ClInclude Include="BudynekEdukacyjny.h" />
     <ClInclude Include="Dziekanat.h" />
     <ClInclude Include="Ponadgimnazjalna.h" />
@@ -155,6 +156,7 @@
     <ClInclude Include="Uczelnia.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Aula.cpp" />
     <ClCompile Include="BudynekEdukacyjny.cpp" />
     <ClCompile Include="Dziekanat.cpp" />
     <ClCompile Include="Ponadgimnazjalna.cpp" />

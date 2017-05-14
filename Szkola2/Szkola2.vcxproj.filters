@@ -36,6 +36,9 @@
     <ClInclude Include="Dziekanat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Aula.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BudynekEdukacyjny.cpp">
@@ -60,6 +63,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Dziekanat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Aula.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
