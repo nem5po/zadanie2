@@ -60,6 +60,9 @@ int main() {
 	wsk->wyswietlStan();
 	*/
 
+	
+	
+
 	/////////////////////////////////
 	//Ponadgimnazjalna ponadgimnazjalna;	// domyslnie
 	//ponadgimnazjalna.stworzSale(ponadgimnazjalna, 3);
@@ -67,6 +70,8 @@ int main() {
 	ponadgimnazjalna.stworzSale(3);
 	Uczelnia uczelnia;
 	uczelnia.stworzAule(2);
+	Szkola szkola;
+	szkola.stworzSale(1);
 	int wybranyObiekt = 1;
 	//Szkola szk;
 	do {
@@ -79,9 +84,10 @@ int main() {
 			cout << "4 - Zmiana parametrow sekretariatu/dziekanatu" << endl;
 			cout << "5 - Zapisz stan obiektu do pliku" << endl;
 			cout << "6 - Odczytaj stan obiektu z pliku" << endl;
-			cout << "7 - Dodaj sale" << endl;
-			cout << "8 - test2" << endl;
-			cout << "9 - Zakoncz" << endl << endl;
+			cout << "7 - Dodaj sale/aule" << endl;
+			cout << "8 - test - polimorfizm" << endl;
+			cout << "9 - test - zastosowanie metod wirtualnych na wektorach obiektow" << endl;
+			cout << "10 - Zakoncz" << endl << endl;
 			cout << "Wybieram opcje: ";
 			cin >> opcja;
 			break;
@@ -167,24 +173,51 @@ int main() {
 		{
 			system("cls");
 			if (wybranyObiekt == 1) {
-				Sala salap;
-				//ponadgimnazjalna.operator+(salap);// = ponadgimnazjalna + salap;
-				//ponadgimnazjalna.stworzSale(ponadgimnazjalna, 3);
-				ponadgimnazjalna.dodajSale(salap);
+				Sala salaDodatkowa;
+				ponadgimnazjalna.dodajSale(salaDodatkowa);
 			}
 			else {
-				Aula aulap;
-				uczelnia.dodajAule(aulap);
+				Aula aulaDodatkowa;
+				uczelnia.dodajAule(aulaDodatkowa);
 			}
 			opcja = 0;
 			break;
 		}
 		case 8:
 			system("cls");
+			cout << "testowanie-polimorfizm" << endl;
+			
+			BudynekEdukacyjny *budynki[3];
+			budynki[0] = &ponadgimnazjalna;
+			budynki[1] = &szkola;
+			budynki[2] = &uczelnia;
+			cout << "**********************" << endl;
+			for (int i = 0; i < 3; i++) {
+				budynki[i]->wyswietlStan();
+				cout << "**********************" << endl;
+			}
+			
+			
 
 			opcja = 0;
 			break;
-		case 9:
+		case 9: {
+			system("cls");
+			cout << "zastosowanie metod wirtualnych na wektorach obiektow" << endl;
+			vector<BudynekEdukacyjny*>budynki2;
+			budynki2.push_back(&ponadgimnazjalna);
+			budynki2.push_back(&szkola);
+			budynki2.push_back(&uczelnia);
+			cout << "**********************" << endl;
+			for (int i = 0; i < 3; i++) {
+				budynki2[i]->wyswietlStan();
+				cout << "**********************" << endl;
+			}
+
+			opcja = 0;
+			break;
+		}
+		case 10:
 			system("cls");
 
 			opcja = 0;
@@ -195,5 +228,5 @@ int main() {
 			opcja = 0;
 		} 
 
-	} while (opcja !=9);
+	} while (opcja !=10);
 } 
