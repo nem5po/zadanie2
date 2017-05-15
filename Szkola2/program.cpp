@@ -66,6 +66,7 @@ int main() {
 	Ponadgimnazjalna ponadgimnazjalna;
 	ponadgimnazjalna.stworzSale(3);
 	Uczelnia uczelnia;
+	uczelnia.stworzAule(2);
 	int wybranyObiekt = 1;
 	//Szkola szk;
 	do {
@@ -165,10 +166,16 @@ int main() {
 		case 7:
 		{
 			system("cls");
-			Sala salap;
-			//ponadgimnazjalna.operator+(salap);// = ponadgimnazjalna + salap;
-			//ponadgimnazjalna.stworzSale(ponadgimnazjalna, 3);
-			ponadgimnazjalna.dodajSale(salap);
+			if (wybranyObiekt == 1) {
+				Sala salap;
+				//ponadgimnazjalna.operator+(salap);// = ponadgimnazjalna + salap;
+				//ponadgimnazjalna.stworzSale(ponadgimnazjalna, 3);
+				ponadgimnazjalna.dodajSale(salap);
+			}
+			else {
+				Aula aulap;
+				uczelnia.dodajAule(aulap);
+			}
 			opcja = 0;
 			break;
 		}

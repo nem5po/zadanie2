@@ -17,6 +17,8 @@ void Uczelnia::zapiszStan(Uczelnia& uczelnia, ostream & os)
 {
 	BudynekEdukacyjny::zapiszStan(uczelnia, os);
 	os << uczelnia<<endl;
+	for (int i = 0; i < uczelnia.aule.size(); i++)
+		os << uczelnia.aule[i];
 	os << uczelnia.dziekanat;
 }
 
@@ -24,6 +26,8 @@ void Uczelnia::wczytajStan(Uczelnia& uczelnia, istream & is)
 {
 	BudynekEdukacyjny::wczytajStan(uczelnia, is);
 	is >> uczelnia;
+	for (int i = 0; i < uczelnia.aule.size(); i++)
+		is>> uczelnia.aule[i];
 	is >> uczelnia.dziekanat;
 	//cout << "liczba studentow: " << liczbaStudentow << endl << "liczba wydzialow: " << liczbaWydzialow << endl;
 }
@@ -31,6 +35,8 @@ void Uczelnia::wczytajStan(Uczelnia& uczelnia, istream & is)
 void Uczelnia::wyswietlStan()
 {
 	cout << "Liczba wydzialow: " << liczbaWydzialow << endl << "liczba studentow: " << liczbaStudentow << endl;
+	for (int i = 0; i < aule.size(); i++)
+		aule[i].wyswietlZawartosc();
 	dziekanat.wyswietlZawartosc();
 }
 
@@ -44,6 +50,18 @@ void Uczelnia::pozmieniajParametryDziekanatu()
 {
 	dziekanat.zmienLiczbePanZDziekanatu(4);
 	dziekanat.dziekanJest();
+}
+
+void Uczelnia::stworzAule(int ileAuli)
+{
+	for (int i = 0; i < ileAuli; i++)
+		aule.push_back(Aula());
+	
+}
+
+void Uczelnia::dodajAule(Aula & aulaWykladowa)
+{
+	aule.push_back(aulaWykladowa);
 }
 
 ostream & operator<<(ostream & s, Uczelnia & uczelnia)
