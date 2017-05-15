@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-/// Klasa bazowa - abstrakcyjna
+/// Klasa abstrakcyjna
 class BudynekEdukacyjny
 {
 private:

@@ -13,59 +13,7 @@ using namespace std;
 int opcja;
 
 int main() {
-	/*BudynekEdukacyjny bud1;
-
-	ofstream plik("budynki.txt");
-	plik << bud1;
-	plik.close();
 	
-	BudynekEdukacyjny bud2;
-	ifstream iplik("budynki.txt");
-	iplik >> bud2;
-	iplik.close();
-
-	
-	//cout << bud2.numer << endl;
-	*/
-
-	/*
-	Ponadgimnazjalna pgim1;
-	ofstream plikgm("budynki.txt");
-	plikgm << pgim1;
-	plikgm.close();
-
-	Ponadgimnazjalna pgim2;
-	ifstream plikgm2("budynki.txt");
-	plikgm2 >> pgim2;
-	plikgm2.close();
-	//cout << pgim2.liczbaMaturzystow;
-
-	Ponadgimnazjalna szk;
-	ofstream pl("budynki.txt");
-	
-	szk.zapiszStan(szk,pl);
-	pl.close();
-
-	ifstream plodcz("budynki.txt");
-	szk.wczytajStan(szk,plodcz);
-	plodcz.close();
-
-	szk.wyswietlStan();
-
-	cout << "++++++++++++++++" << endl;
-	// "Wywolanie funkcji przez wskaznik typu Szkola wskazujacy na obiekty dziedziczace po Szkole (Ponadgimnazjalna)" << endl;
-	Ponadgimnazjalna pgmn;
-	Szkola *wsk;
-	wsk = &pgmn;
-	wsk->wyswietlStan();
-	*/
-
-	
-	
-
-	/////////////////////////////////
-	//Ponadgimnazjalna ponadgimnazjalna;	// domyslnie
-	//ponadgimnazjalna.stworzSale(ponadgimnazjalna, 3);
 	Ponadgimnazjalna ponadgimnazjalna;
 	ponadgimnazjalna.stworzSale(3);
 	Uczelnia uczelnia;
@@ -73,11 +21,11 @@ int main() {
 	Szkola szkola;
 	szkola.stworzSale(1);
 	int wybranyObiekt = 1;
-	//Szkola szk;
+	
 	do {
 		switch (opcja) {
 		case 0:
-			cout << "Opcje do wyboru:" << endl << endl;
+			cout <<endl<< "Opcje do wyboru:" << endl << endl;
 			cout << "1 - Wyswietl stan obiektu" << endl;
 			cout << "2 - Zmiana obiektu" << endl;
 			cout << "3 - Zmiana liczby studentow/uczniow/maturzystow" << endl;
@@ -128,12 +76,15 @@ int main() {
 		case 4:
 		{
 			system("cls");
-			/////////////////////////////// tutaj jeszcze opcja zeby podac ile sekretarek z klawiatury
+			
+			cout << "Podaj, ile sekretarek ma byc w sekratariacie/dziekanacie:" << endl;
+			int liczbaPan;
+			cin >> liczbaPan;
 			if (wybranyObiekt == 1) {
-				ponadgimnazjalna.pozmieniajParametrySekretariatu();
+				ponadgimnazjalna.pozmieniajParametrySekretariatu(liczbaPan);
 			}
 			else {
-				uczelnia.pozmieniajParametryDziekanatu();
+				uczelnia.pozmieniajParametryDziekanatu(liczbaPan);
 			}
 			opcja = 0;
 			break;

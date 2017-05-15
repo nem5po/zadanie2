@@ -65,10 +65,10 @@ void Szkola::dodajSale(Sala & salaLekcyjna)
 	liczbaSal = sala.size();
 }
 
-void Szkola::pozmieniajParametrySekretariatu()
+void Szkola::pozmieniajParametrySekretariatu(int ileSekretarek)
 {
 	sekretariat.dodatkowePomieszczenieDlaVice();
-	sekretariat.zmienLiczbeSekretarek(3);
+	sekretariat.zmienLiczbeSekretarek(ileSekretarek);
 	sekretariat.dyrektorJest();
 }
 

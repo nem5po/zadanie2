@@ -1,0 +1,146 @@
+\section{Dokumentacja klasy Budynek\+Edukacyjny}
+\label{class_budynek_edukacyjny}\index{Budynek\+Edukacyjny@{Budynek\+Edukacyjny}}
+
+
+Klasa abstrakcyjna.  
+
+
+
+
+{\ttfamily \#include $<$Budynek\+Edukacyjny.\+h$>$}
+
+Diagram dziedziczenia dla Budynek\+Edukacyjny\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_budynek_edukacyjny}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Budynek\+Edukacyjny} ()
+\begin{DoxyCompactList}\small\item\em konstruktor domyslny \end{DoxyCompactList}\item 
+virtual \textbf{ $\sim$\+Budynek\+Edukacyjny} ()
+\begin{DoxyCompactList}\small\item\em destruktor wirtualny \end{DoxyCompactList}\item 
+void \textbf{ zapisz\+Stan} (\textbf{ Budynek\+Edukacyjny} \&budynek\+Edukacyjny, ostream \&os)
+\begin{DoxyCompactList}\small\item\em Funkcja umozliwiajaca zapisywanie stanu obiektu do pliku. \end{DoxyCompactList}\item 
+void \textbf{ wczytaj\+Stan} (\textbf{ Budynek\+Edukacyjny} \&budynek\+Edukacyjny, istream \&is)
+\begin{DoxyCompactList}\small\item\em Funkcja umozliwiajaca odczytywanie stanu obiektu z pliku. \end{DoxyCompactList}\item 
+virtual void \textbf{ wyswietl\+Stan} ()=0
+\begin{DoxyCompactList}\small\item\em Funkcja wirtualna wyswietlajaca stan obiektu. \end{DoxyCompactList}\item 
+virtual void \textbf{ zmien\+Liczbe\+Osob} (int nowa\+Liczba\+Osob)=0
+\end{DoxyCompactItemize}
+\subsection*{Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \textbf{ operator$<$$<$} (ostream \&s, \textbf{ Budynek\+Edukacyjny} \&budynek)
+\begin{DoxyCompactList}\small\item\em Operator strumieniowy $<$$<$. \end{DoxyCompactList}\item 
+istream \& \textbf{ operator$>$$>$} (istream \&s, \textbf{ Budynek\+Edukacyjny} \&budynek)
+\begin{DoxyCompactList}\small\item\em Operator strumieniowy $>$$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa abstrakcyjna. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\label{class_budynek_edukacyjny_acc5537dbcd488bbbf453683ea2a587f0}} 
+\index{Budynek\+Edukacyjny@{Budynek\+Edukacyjny}!Budynek\+Edukacyjny@{Budynek\+Edukacyjny}}
+\index{Budynek\+Edukacyjny@{Budynek\+Edukacyjny}!Budynek\+Edukacyjny@{Budynek\+Edukacyjny}}
+\subsubsection{Budynek\+Edukacyjny()}
+{\footnotesize\ttfamily Budynek\+Edukacyjny\+::\+Budynek\+Edukacyjny (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+konstruktor domyslny 
+
+\mbox{\label{class_budynek_edukacyjny_ace2766b8f5d6b3178267a07edac1868d}} 
+\index{Budynek\+Edukacyjny@{Budynek\+Edukacyjny}!````~Budynek\+Edukacyjny@{$\sim$\+Budynek\+Edukacyjny}}
+\index{````~Budynek\+Edukacyjny@{$\sim$\+Budynek\+Edukacyjny}!Budynek\+Edukacyjny@{Budynek\+Edukacyjny}}
+\subsubsection{$\sim$\+Budynek\+Edukacyjny()}
+{\footnotesize\ttfamily Budynek\+Edukacyjny\+::$\sim$\+Budynek\+Edukacyjny (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+destruktor wirtualny 
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\label{class_budynek_edukacyjny_ac5a69c8bc9c3a96a6355b550cac15116}} 
+\index{Budynek\+Edukacyjny@{Budynek\+Edukacyjny}!wczytaj\+Stan@{wczytaj\+Stan}}
+\index{wczytaj\+Stan@{wczytaj\+Stan}!Budynek\+Edukacyjny@{Budynek\+Edukacyjny}}
+\subsubsection{wczytaj\+Stan()}
+{\footnotesize\ttfamily void Budynek\+Edukacyjny\+::wczytaj\+Stan (\begin{DoxyParamCaption}\item[{\textbf{ Budynek\+Edukacyjny} \&}]{budynek\+Edukacyjny,  }\item[{istream \&}]{is }\end{DoxyParamCaption})}
+
+
+
+Funkcja umozliwiajaca odczytywanie stanu obiektu z pliku. 
+
+\mbox{\label{class_budynek_edukacyjny_abb1fd21489d583814ddb2884e4402829}} 
+\index{Budynek\+Edukacyjny@{Budynek\+Edukacyjny}!wyswietl\+Stan@{wyswietl\+Stan}}
+\index{wyswietl\+Stan@{wyswietl\+Stan}!Budynek\+Edukacyjny@{Budynek\+Edukacyjny}}
+\subsubsection{wyswietl\+Stan()}
+{\footnotesize\ttfamily virtual void Budynek\+Edukacyjny\+::wyswietl\+Stan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Funkcja wirtualna wyswietlajaca stan obiektu. 
+
+
+
+Implementowany w \textbf{ Szkola} \doxyref{}{str.}{class_szkola_a44e70f6bdcf477336e4c654d445a151c}, \textbf{ Uczelnia} \doxyref{}{str.}{class_uczelnia_acf5cd01d18c45a5769a87583896e79d3} i \textbf{ Ponadgimnazjalna} \doxyref{}{str.}{class_ponadgimnazjalna_a1b7a0ab77634eef40f2c13a5d65ccbfc}.
+
+\mbox{\label{class_budynek_edukacyjny_a2ca7976a980aefccf18e2dd8533dd4c1}} 
+\index{Budynek\+Edukacyjny@{Budynek\+Edukacyjny}!zapisz\+Stan@{zapisz\+Stan}}
+\index{zapisz\+Stan@{zapisz\+Stan}!Budynek\+Edukacyjny@{Budynek\+Edukacyjny}}
+\subsubsection{zapisz\+Stan()}
+{\footnotesize\ttfamily void Budynek\+Edukacyjny\+::zapisz\+Stan (\begin{DoxyParamCaption}\item[{\textbf{ Budynek\+Edukacyjny} \&}]{budynek\+Edukacyjny,  }\item[{ostream \&}]{os }\end{DoxyParamCaption})}
+
+
+
+Funkcja umozliwiajaca zapisywanie stanu obiektu do pliku. 
+
+\mbox{\label{class_budynek_edukacyjny_a696551e2cc675bb42a8e82a035850c94}} 
+\index{Budynek\+Edukacyjny@{Budynek\+Edukacyjny}!zmien\+Liczbe\+Osob@{zmien\+Liczbe\+Osob}}
+\index{zmien\+Liczbe\+Osob@{zmien\+Liczbe\+Osob}!Budynek\+Edukacyjny@{Budynek\+Edukacyjny}}
+\subsubsection{zmien\+Liczbe\+Osob()}
+{\footnotesize\ttfamily virtual void Budynek\+Edukacyjny\+::zmien\+Liczbe\+Osob (\begin{DoxyParamCaption}\item[{int}]{nowa\+Liczba\+Osob }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Funkcja wirtualna zmieniajaca liczbe osob w poszczegolnych obiektach dziedziczacych po klasie \doxyref{Budynek\+Edukacyjny}{str.}{class_budynek_edukacyjny} 
+\begin{DoxyParams}{Parametry}
+{\em nowa\+Liczba\+Osob} & -\/ jest nowa liczba uczniow/studentow/maturzystow \\
+\hline
+\end{DoxyParams}
+
+
+Implementowany w \textbf{ Szkola} \doxyref{}{str.}{class_szkola_aa565b62f14aeae44a2324b7e1c74147d}, \textbf{ Uczelnia} \doxyref{}{str.}{class_uczelnia_af4c8136c18a173eaf8626321e6164d35} i \textbf{ Ponadgimnazjalna} \doxyref{}{str.}{class_ponadgimnazjalna_a068d0bdb268b5e4b10d6b574681f96e3}.
+
+
+
+\subsection{Dokumentacja przyjaciół i funkcji związanych}
+\mbox{\label{class_budynek_edukacyjny_acb7de1b3048156b676e2bf8d67d5bfaf}} 
+\index{Budynek\+Edukacyjny@{Budynek\+Edukacyjny}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Budynek\+Edukacyjny@{Budynek\+Edukacyjny}}
+\subsubsection{operator$<$$<$}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{s,  }\item[{\textbf{ Budynek\+Edukacyjny} \&}]{budynek }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator strumieniowy $<$$<$. 
+
+\mbox{\label{class_budynek_edukacyjny_a710e2d84c1b923f8144743db7abaa75c}} 
+\index{Budynek\+Edukacyjny@{Budynek\+Edukacyjny}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Budynek\+Edukacyjny@{Budynek\+Edukacyjny}}
+\subsubsection{operator$>$$>$}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{s,  }\item[{\textbf{ Budynek\+Edukacyjny} \&}]{budynek }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator strumieniowy $>$$>$ 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Ewa/\+Documents/\+Visual Studio 2015/\+Projects/\+Szkola2/\+Szkola2/\textbf{ Budynek\+Edukacyjny.\+h}\item 
+C\+:/\+Users/\+Ewa/\+Documents/\+Visual Studio 2015/\+Projects/\+Szkola2/\+Szkola2/\textbf{ Budynek\+Edukacyjny.\+cpp}\end{DoxyCompactItemize}

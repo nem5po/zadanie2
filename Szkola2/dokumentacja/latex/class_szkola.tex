@@ -1,0 +1,217 @@
+\section{Dokumentacja klasy Szkola}
+\label{class_szkola}\index{Szkola@{Szkola}}
+
+
+Klasa \doxyref{Szkola}{str.}{class_szkola}, dziedziczy po klasie \doxyref{Budynek\+Edukacyjny}{str.}{class_budynek_edukacyjny}.  
+
+
+
+
+{\ttfamily \#include $<$Szkola.\+h$>$}
+
+Diagram dziedziczenia dla Szkola\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_szkola}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Szkola} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Szkola} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+void \textbf{ zapisz\+Stan} (\textbf{ Szkola} \&szkola, ostream \&os)
+\begin{DoxyCompactList}\small\item\em Funkcja umozliwiajaca zapisywanie stanu obiektu do pliku. \end{DoxyCompactList}\item 
+void \textbf{ wczytaj\+Stan} (\textbf{ Szkola} \&szkola, istream \&is)
+\begin{DoxyCompactList}\small\item\em Funkcja umozliwiajaca udczytywanie stanu obiektu z pliku. \end{DoxyCompactList}\item 
+void \textbf{ wyswietl\+Stan} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wirtualna wyswietlajaca stan obiektu. \end{DoxyCompactList}\item 
+void \textbf{ zmien\+Liczbe\+Osob} (int nowa\+Liczba\+Osob)
+\item 
+void \textbf{ stworz\+Sale} (int ile\+Sal)
+\item 
+void \textbf{ dodaj\+Sale} (\textbf{ Sala} \&sala\+Lekcyjna)
+\begin{DoxyCompactList}\small\item\em Funkcja umozliwiajaca dodanie sali do szkoly. \end{DoxyCompactList}\item 
+void \textbf{ pozmieniaj\+Parametry\+Sekretariatu} (int ile\+Sekretarek)
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ liczba\+Uczniow}
+\begin{DoxyCompactList}\small\item\em zmienna przechowujaca liczbe uczniow szkoly \end{DoxyCompactList}\item 
+int \textbf{ liczba\+Sal}
+\begin{DoxyCompactList}\small\item\em zmienna przechowujaca liczbe sal w szkole \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \textbf{ operator$<$$<$} (ostream \&s, \textbf{ Szkola} \&szkola)
+\begin{DoxyCompactList}\small\item\em Operator strumieniowy $<$$<$. \end{DoxyCompactList}\item 
+istream \& \textbf{ operator$>$$>$} (istream \&s, \textbf{ Szkola} \&szkola)
+\begin{DoxyCompactList}\small\item\em Operator strumieniowy $>$$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa \doxyref{Szkola}{str.}{class_szkola}, dziedziczy po klasie \doxyref{Budynek\+Edukacyjny}{str.}{class_budynek_edukacyjny}. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\label{class_szkola_acc1d740201e0509ab43ae6d1dae19816}} 
+\index{Szkola@{Szkola}!Szkola@{Szkola}}
+\index{Szkola@{Szkola}!Szkola@{Szkola}}
+\subsubsection{Szkola()}
+{\footnotesize\ttfamily Szkola\+::\+Szkola (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyslny. 
+
+\mbox{\label{class_szkola_ac02eff91da805d8b6f9e08e0a4669155}} 
+\index{Szkola@{Szkola}!````~Szkola@{$\sim$\+Szkola}}
+\index{````~Szkola@{$\sim$\+Szkola}!Szkola@{Szkola}}
+\subsubsection{$\sim$\+Szkola()}
+{\footnotesize\ttfamily Szkola\+::$\sim$\+Szkola (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor. 
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\label{class_szkola_a0e95e2dd75a50d946f21a83c24116067}} 
+\index{Szkola@{Szkola}!dodaj\+Sale@{dodaj\+Sale}}
+\index{dodaj\+Sale@{dodaj\+Sale}!Szkola@{Szkola}}
+\subsubsection{dodaj\+Sale()}
+{\footnotesize\ttfamily void Szkola\+::dodaj\+Sale (\begin{DoxyParamCaption}\item[{\textbf{ Sala} \&}]{sala\+Lekcyjna }\end{DoxyParamCaption})}
+
+
+
+Funkcja umozliwiajaca dodanie sali do szkoly. 
+
+\mbox{\label{class_szkola_a16bac6c05a806c9e5077eaf447e9cf1a}} 
+\index{Szkola@{Szkola}!pozmieniaj\+Parametry\+Sekretariatu@{pozmieniaj\+Parametry\+Sekretariatu}}
+\index{pozmieniaj\+Parametry\+Sekretariatu@{pozmieniaj\+Parametry\+Sekretariatu}!Szkola@{Szkola}}
+\subsubsection{pozmieniaj\+Parametry\+Sekretariatu()}
+{\footnotesize\ttfamily void Szkola\+::pozmieniaj\+Parametry\+Sekretariatu (\begin{DoxyParamCaption}\item[{int}]{ile\+Sekretarek }\end{DoxyParamCaption})}
+
+Funkcja zmieniajaca parametry sekretariatu wykorzystywana do sprawdzenia poprawnosci zapisu/odczytu z pliku 
+\begin{DoxyParams}{Parametry}
+{\em ile\+Sekretarek} & okresla nowa liczbe sekretarek, podawana przez uzytkownika \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_szkola_a721ae2d9aa21ceab5d4eabd9f9073455}} 
+\index{Szkola@{Szkola}!stworz\+Sale@{stworz\+Sale}}
+\index{stworz\+Sale@{stworz\+Sale}!Szkola@{Szkola}}
+\subsubsection{stworz\+Sale()}
+{\footnotesize\ttfamily void Szkola\+::stworz\+Sale (\begin{DoxyParamCaption}\item[{int}]{ile\+Sal }\end{DoxyParamCaption})}
+
+Funkcja umozliwiajaca stworzenie sal w szkole 
+\begin{DoxyParams}{Parametry}
+{\em ile\+Sal} & okresla ile sal ma powstac \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja nic nie zwraca 
+\end{DoxyReturn}
+\mbox{\label{class_szkola_a448513e471b9ce17360f106c9ef823b3}} 
+\index{Szkola@{Szkola}!wczytaj\+Stan@{wczytaj\+Stan}}
+\index{wczytaj\+Stan@{wczytaj\+Stan}!Szkola@{Szkola}}
+\subsubsection{wczytaj\+Stan()}
+{\footnotesize\ttfamily void Szkola\+::wczytaj\+Stan (\begin{DoxyParamCaption}\item[{\textbf{ Szkola} \&}]{szkola,  }\item[{istream \&}]{is }\end{DoxyParamCaption})}
+
+
+
+Funkcja umozliwiajaca udczytywanie stanu obiektu z pliku. 
+
+\mbox{\label{class_szkola_a44e70f6bdcf477336e4c654d445a151c}} 
+\index{Szkola@{Szkola}!wyswietl\+Stan@{wyswietl\+Stan}}
+\index{wyswietl\+Stan@{wyswietl\+Stan}!Szkola@{Szkola}}
+\subsubsection{wyswietl\+Stan()}
+{\footnotesize\ttfamily void Szkola\+::wyswietl\+Stan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Funkcja wirtualna wyswietlajaca stan obiektu. 
+
+
+
+Implementuje \textbf{ Budynek\+Edukacyjny} \doxyref{}{str.}{class_budynek_edukacyjny_abb1fd21489d583814ddb2884e4402829}.
+
+\mbox{\label{class_szkola_aac69b456cc7836760a38dd03efa6600c}} 
+\index{Szkola@{Szkola}!zapisz\+Stan@{zapisz\+Stan}}
+\index{zapisz\+Stan@{zapisz\+Stan}!Szkola@{Szkola}}
+\subsubsection{zapisz\+Stan()}
+{\footnotesize\ttfamily void Szkola\+::zapisz\+Stan (\begin{DoxyParamCaption}\item[{\textbf{ Szkola} \&}]{szkola,  }\item[{ostream \&}]{os }\end{DoxyParamCaption})}
+
+
+
+Funkcja umozliwiajaca zapisywanie stanu obiektu do pliku. 
+
+\mbox{\label{class_szkola_aa565b62f14aeae44a2324b7e1c74147d}} 
+\index{Szkola@{Szkola}!zmien\+Liczbe\+Osob@{zmien\+Liczbe\+Osob}}
+\index{zmien\+Liczbe\+Osob@{zmien\+Liczbe\+Osob}!Szkola@{Szkola}}
+\subsubsection{zmien\+Liczbe\+Osob()}
+{\footnotesize\ttfamily void Szkola\+::zmien\+Liczbe\+Osob (\begin{DoxyParamCaption}\item[{int}]{nowa\+Liczba\+Osob }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Funkcja wirtualna zmieniajaca liczbe osob w poszczegolnych obiektach dziedziczacych po klasie \doxyref{Budynek\+Edukacyjny}{str.}{class_budynek_edukacyjny} 
+\begin{DoxyParams}{Parametry}
+{\em nowa\+Liczba\+Osob} & -\/ jest nowa liczba uczniow/studentow/maturzystow \\
+\hline
+\end{DoxyParams}
+
+
+Implementuje \textbf{ Budynek\+Edukacyjny} \doxyref{}{str.}{class_budynek_edukacyjny_a696551e2cc675bb42a8e82a035850c94}.
+
+
+
+\subsection{Dokumentacja przyjaciół i funkcji związanych}
+\mbox{\label{class_szkola_add41882b5f95833d8642c9b687b36818}} 
+\index{Szkola@{Szkola}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Szkola@{Szkola}}
+\subsubsection{operator$<$$<$}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{s,  }\item[{\textbf{ Szkola} \&}]{szkola }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator strumieniowy $<$$<$. 
+
+\mbox{\label{class_szkola_a5a2f94d0c0560a5fee36beba5c8501cd}} 
+\index{Szkola@{Szkola}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Szkola@{Szkola}}
+\subsubsection{operator$>$$>$}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{s,  }\item[{\textbf{ Szkola} \&}]{szkola }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator strumieniowy $>$$>$ 
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{class_szkola_a70a403bca5c564eb058e22c56ea9397b}} 
+\index{Szkola@{Szkola}!liczba\+Sal@{liczba\+Sal}}
+\index{liczba\+Sal@{liczba\+Sal}!Szkola@{Szkola}}
+\subsubsection{liczba\+Sal}
+{\footnotesize\ttfamily int Szkola\+::liczba\+Sal\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+zmienna przechowujaca liczbe sal w szkole 
+
+\mbox{\label{class_szkola_a87462522c2046a383155dbde51647b1d}} 
+\index{Szkola@{Szkola}!liczba\+Uczniow@{liczba\+Uczniow}}
+\index{liczba\+Uczniow@{liczba\+Uczniow}!Szkola@{Szkola}}
+\subsubsection{liczba\+Uczniow}
+{\footnotesize\ttfamily int Szkola\+::liczba\+Uczniow\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+zmienna przechowujaca liczbe uczniow szkoly 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Ewa/\+Documents/\+Visual Studio 2015/\+Projects/\+Szkola2/\+Szkola2/\textbf{ Szkola.\+h}\item 
+C\+:/\+Users/\+Ewa/\+Documents/\+Visual Studio 2015/\+Projects/\+Szkola2/\+Szkola2/\textbf{ Szkola.\+cpp}\end{DoxyCompactItemize}

@@ -1,7 +1,7 @@
 #pragma once
 #include "Szkola.h"
 
-//Klasa Ponadgimnazjalna, dziedziczy po klasie Szkola
+///Klasa Ponadgimnazjalna, dziedziczy po klasie Szkola
 class Ponadgimnazjalna :
 	public Szkola
 {

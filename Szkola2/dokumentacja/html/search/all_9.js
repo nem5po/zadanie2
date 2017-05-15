@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['wczytajstan',['wczytajStan',['../class_budynek_edukacyjny.html#ac5a69c8bc9c3a96a6355b550cac15116',1,'BudynekEdukacyjny::wczytajStan()'],['../class_ponadgimnazjalna.html#aa5994292fcdb2616c235cb06fc4c0fde',1,'Ponadgimnazjalna::wczytajStan()'],['../class_szkola.html#a448513e471b9ce17360f106c9ef823b3',1,'Szkola::wczytajStan()'],['../class_uczelnia.html#a46339289bee2e7dccf36515f69676b4d',1,'Uczelnia::wczytajStan()']]],
+  ['wyswietlstan',['wyswietlStan',['../class_budynek_edukacyjny.html#abb1fd21489d583814ddb2884e4402829',1,'BudynekEdukacyjny::wyswietlStan()'],['../class_ponadgimnazjalna.html#a1b7a0ab77634eef40f2c13a5d65ccbfc',1,'Ponadgimnazjalna::wyswietlStan()'],['../class_szkola.html#a44e70f6bdcf477336e4c654d445a151c',1,'Szkola::wyswietlStan()'],['../class_uczelnia.html#acf5cd01d18c45a5769a87583896e79d3',1,'Uczelnia::wyswietlStan()']]],
+  ['wyswietlzawartosc',['wyswietlZawartosc',['../class_aula.html#ab6a5e2f1f4223f819709648e642cccd6',1,'Aula::wyswietlZawartosc()'],['../class_dziekanat.html#add916fbcb8d862caa73a1d431bbee1a6',1,'Dziekanat::wyswietlZawartosc()'],['../class_sala.html#a0b00333c8ffb56aec15edb78c1e54c5d',1,'Sala::wyswietlZawartosc()'],['../class_sekretariat.html#ac57c1148ad8cdc0f76fd8ad1f709a92b',1,'Sekretariat::wyswietlZawartosc()']]]
+];

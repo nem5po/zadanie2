@@ -36,9 +36,11 @@ public:
 	void stworzSale(int ileSal);
 	///Funkcja umozliwiajaca dodanie sali do szkoly
 	void dodajSale(Sala &salaLekcyjna);
-	///Funkcja zmieniajaca parametry sekretariatu
-	///wykorzystywana do sprawdzenia poprawnosci zapisu/odczytu z pliku
-	void pozmieniajParametrySekretariatu();
+	/**Funkcja zmieniajaca parametry sekretariatu 
+	wykorzystywana do sprawdzenia poprawnosci zapisu/odczytu z pliku
+	\param ileSekretarek okresla nowa liczbe sekretarek, podawana przez uzytkownika
+	*/
+	void pozmieniajParametrySekretariatu(int ileSekretarek);
 	
 	/// Operator strumieniowy <<
 	friend ostream& operator <<(ostream &s, Szkola &szkola);

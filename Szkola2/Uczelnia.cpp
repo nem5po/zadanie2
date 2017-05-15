@@ -45,9 +45,9 @@ void Uczelnia::zmienLiczbeOsob(int nowaLiczbaOsob)
 	cout << "Ta uczelnia ma teraz " << liczbaStudentow << " studentow." << endl;
 }
 
-void Uczelnia::pozmieniajParametryDziekanatu()
+void Uczelnia::pozmieniajParametryDziekanatu(int ilePanZDziekanatu)
 {
-	dziekanat.zmienLiczbePanZDziekanatu(4);
+	dziekanat.zmienLiczbePanZDziekanatu(ilePanZDziekanatu);
 	dziekanat.dziekanJest();
 }
 
