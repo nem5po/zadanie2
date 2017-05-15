@@ -28,12 +28,13 @@ public:
 	void wczytajStan(Uczelnia& uczelnia,istream& is);
 	void wyswietlStan();
 	void zmienLiczbeOsob(int nowaLiczbaOsob);
-	/**Funkcja zmieniajaca parametry podobiektu Dziekanat 
-	wykorzystywana do sprawdzenia poprawnosci zapisu/odczytu z pliku
+	///Funkcja zmieniajaca parametry podobiektu Dziekanat 
+	/**wykorzystywana do sprawdzenia poprawnosci zapisu/odczytu z pliku
 	\param ilePanZDziekanatu okresla nowa liczbe pan w dziekanacie
 	*/
 	void pozmieniajParametryDziekanatu(int ilePanZDziekanatu);
-	/**Funkcja umozliwiajaca stworzenie auli w uczelni
+	///Funkcja umozliwiajaca stworzenie auli w uczelni
+	/**parametrem jest ilosc auli
 	\param ileAuli okresla ile podobiektow ma powstac
 	\return funkcja nic ni zwraca
 	*/
