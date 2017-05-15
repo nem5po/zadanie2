@@ -141,15 +141,18 @@ int main() {
 		case 5:
 		{
 			system("cls");
-			//////////////////////// albo do 2 roznych plikow zeby czytac oba kiedy sie chce ?
-			ofstream plikZapis("budynki.txt");
+			
 			if (wybranyObiekt == 1) {
+				ofstream plikZapis("ponadgimnazjalna.txt");
 				ponadgimnazjalna.zapiszStan(ponadgimnazjalna, plikZapis);
+				plikZapis.close();
 			}
 			else {
+				ofstream plikZapis("uczelnia.txt");
 				uczelnia.zapiszStan(uczelnia, plikZapis);
+				plikZapis.close();
 			}
-			plikZapis.close();
+			
 
 			opcja = 0;
 			break;
@@ -157,14 +160,18 @@ int main() {
 		case 6:
 		{
 			system("cls");
-			ifstream plikOdczyt("budynki.txt");
+			
 			if (wybranyObiekt == 1) {
+				ifstream plikOdczyt("ponadgimnazjalna.txt");
 				ponadgimnazjalna.wczytajStan(ponadgimnazjalna, plikOdczyt);
+				plikOdczyt.close();
 			}
 			else {
+				ifstream plikOdczyt("uczelnia.txt");
 				uczelnia.wczytajStan(uczelnia, plikOdczyt);
+				plikOdczyt.close();
 			}
-			plikOdczyt.close();
+			
 
 			opcja = 0;
 			break;
