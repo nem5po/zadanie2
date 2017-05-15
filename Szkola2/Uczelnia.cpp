@@ -29,7 +29,6 @@ void Uczelnia::wczytajStan(Uczelnia& uczelnia, istream & is)
 	for (int i = 0; i < uczelnia.aule.size(); i++)
 		is>> uczelnia.aule[i];
 	is >> uczelnia.dziekanat;
-	//cout << "liczba studentow: " << liczbaStudentow << endl << "liczba wydzialow: " << liczbaWydzialow << endl;
 }
 
 void Uczelnia::wyswietlStan()

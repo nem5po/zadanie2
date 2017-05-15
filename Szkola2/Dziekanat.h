@@ -4,10 +4,9 @@ using namespace std;
 
 class Dziekanat
 {
-public:
-	//int ilePomieszczen;
 	int liczbaPanZDziekanatu;
 	bool czyDziekanTuJest;
+public:
 	Dziekanat();
 	~Dziekanat();
 	void wyswietlZawartosc();

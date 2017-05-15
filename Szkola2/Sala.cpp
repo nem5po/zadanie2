@@ -6,7 +6,6 @@ Sala::Sala()
 {
 	liczbaLawek = 10;
 	liczbaKrzesel = 2 * liczbaLawek;
-	//cout << "ok" << endl;
 }
 
 
@@ -20,10 +19,10 @@ void Sala::wyswietlZawartosc()
 	cout << "Liczba krzesel: " << liczbaKrzesel << endl;
 }
 
-ostream & operator<<(ostream & out, Sala & sala)
+ostream & operator<<(ostream & s, Sala & sala)
 {
-	out <<sala.liczbaLawek <<endl<< sala.liczbaKrzesel << endl;
-	return out;
+	s <<sala.liczbaLawek <<endl<< sala.liczbaKrzesel << endl;
+	return s;
 }
 
 istream & operator >> (istream & s, Sala & sala)

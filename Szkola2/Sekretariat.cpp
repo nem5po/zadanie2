@@ -6,9 +6,6 @@ using namespace std;
 
 Sekretariat::Sekretariat()
 {
-/*#ifdef  _DEBUG
-	cout << "Wywolano konstruktor domyslny Sekretariat" << endl;
-#endif //  _DEBUG */
 	ilePomieszczen = 2;
 	czyDyrektorTuJest = false;
 	liczbaSekretarek = 1;
@@ -17,9 +14,6 @@ Sekretariat::Sekretariat()
 
 Sekretariat::~Sekretariat()
 {
-/*#ifdef _DEBUG
-	cout << "destruktor Sekretariat" << endl;
-#endif // _DEBUG */
 }
 
 void Sekretariat::wyswietlZawartosc()
@@ -52,26 +46,6 @@ void Sekretariat::zmienLiczbeSekretarek(int liczbaSekretarek)
 void Sekretariat::dyrektorJest()
 {
 	czyDyrektorTuJest = true;
-}
-
-void Sekretariat::operator[](int i)
-{
-	if (i <= ilePomieszczen) {
-		switch (i) {
-		case 1:
-			cout << "Pierwsze pomieszczenie -siedza tu sekretarki" << endl;
-			break;
-		case 2:
-			cout << "Drugie pomieszczenie- gabinet dyrektora" << endl;
-			break;
-		case 3:
-			cout << "Trzecie pomieszczenie- gabinet vice dyrektora" << endl;
-			break;
-		}
-	}
-	else {
-		cout << "Ten sekratariat nie ma tylu pomieszczen!" << endl;
-	}
 }
 
 ostream & operator<<(ostream & s, Sekretariat & sekret)

@@ -24,10 +24,10 @@ void Aula::wyswietlZawartosc()
 	}
 }
 
-ostream & operator<<(ostream & out, Aula & aula)
+ostream & operator<<(ostream & s, Aula & aula)
 {
-	out << aula.liczbaMiejsc << endl << aula.czyJestTuRzutnik<<endl;
-	return out;
+	s << aula.liczbaMiejsc << endl << aula.czyJestTuRzutnik<<endl;
+	return s;
 }
 
 istream & operator >> (istream & s, Aula & aula)

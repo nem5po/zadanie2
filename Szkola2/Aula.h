@@ -4,13 +4,13 @@ using namespace std;
 
 class Aula
 {
-public:
-	Aula();
 	int liczbaMiejsc;
 	bool czyJestTuRzutnik;
+public:
+	Aula();
 	~Aula();
 
-	friend ostream& operator<<(ostream &out, Aula &aula);
+	friend ostream& operator<<(ostream &s, Aula &aula);
 	friend istream& operator >> (istream &s, Aula &aula);
 	void wyswietlZawartosc();
 };

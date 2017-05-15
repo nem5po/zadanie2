@@ -7,13 +7,16 @@
 class Uczelnia :
 	public BudynekEdukacyjny
 {
+private:
+	vector<Aula>aule;
+	Dziekanat dziekanat;
+protected:
+	int liczbaStudentow;
+	int liczbaWydzialow;
 public:
 	Uczelnia();
 	~Uczelnia();
-	int liczbaStudentow;
-	int liczbaWydzialow;
-	vector<Aula>aule;
-	Dziekanat dziekanat;
+		
 	void zapiszStan(Uczelnia& uczelnia,ostream& os);
 	void wczytajStan(Uczelnia& uczelnia,istream& is);
 	void wyswietlStan();

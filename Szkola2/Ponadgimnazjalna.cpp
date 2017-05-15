@@ -5,7 +5,6 @@
 
 Ponadgimnazjalna::Ponadgimnazjalna()
 {
-	//Rodzaj rodzajSzkoly;
 	czyToLO = true;
 	liczbaMaturzystow = 100;
 }
@@ -26,7 +25,6 @@ void Ponadgimnazjalna::wczytajStan(Ponadgimnazjalna& ponadgimnazjalna,istream & 
 {
 	Szkola::wczytajStan(ponadgimnazjalna,is);
 	is >> ponadgimnazjalna;
-	//cout << "liczbaMaturzystow: " << liczbaMaturzystow << endl;
 }
 
 void Ponadgimnazjalna::wyswietlStan()
@@ -47,16 +45,6 @@ void Ponadgimnazjalna::zmienLiczbeOsob(int nowaLiczbaOsob)
 	cout << "Ta szkola ma teraz " << liczbaMaturzystow << " maturzystow." << endl;
 }
 
-void Ponadgimnazjalna::zapisz(Ponadgimnazjalna & szkola)
-{
-	//Szkola::zapisz(szkola);
-	ofstream plik("budynki.txt");
-	Szkola::zapisz(szkola);
-	plik << szkola;
-	plik.close();
-}
-
-
 ostream & operator<<(ostream & s, Ponadgimnazjalna & ponadgim)
 {
 	s << ponadgim.liczbaMaturzystow << endl << ponadgim.czyToLO;
@@ -65,7 +53,6 @@ ostream & operator<<(ostream & s, Ponadgimnazjalna & ponadgim)
 
 istream & operator >> (istream & s, Ponadgimnazjalna &ponadgim)
 {
-	s >> ponadgim.liczbaMaturzystow >> ponadgim.czyToLO;
-	
+	s >> ponadgim.liczbaMaturzystow >> ponadgim.czyToLO;	
 	return s;
 }

@@ -3,10 +3,12 @@
 using namespace std;
 class BudynekEdukacyjny
 {
+private:
+	int ileLatIstnieje;
 public:
 	BudynekEdukacyjny();
 	virtual ~BudynekEdukacyjny();
-	int numer; // zmienic na cos
+	
 
 	void zapiszStan(BudynekEdukacyjny& budynekEdukacyjny, ostream& os);
 	void wczytajStan(BudynekEdukacyjny& budynekEdukacyjny, istream& is);

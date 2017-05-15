@@ -4,7 +4,7 @@
 
 BudynekEdukacyjny::BudynekEdukacyjny()
 {
-	numer = 1;
+	ileLatIstnieje = 123;
 }
 
 
@@ -20,17 +20,17 @@ void BudynekEdukacyjny::zapiszStan(BudynekEdukacyjny& budynekEdukacyjny,ostream 
 void BudynekEdukacyjny::wczytajStan(BudynekEdukacyjny& budynekEdukacyjny,istream & is)
 {
 	is >> budynekEdukacyjny;
-	//cout << budynekEdukacyjny << endl;
+	
 }
 
 ostream & operator<<(ostream &s, BudynekEdukacyjny &budynek)
 {
-	s << budynek.numer;
+	s << budynek.ileLatIstnieje;
 	return s;
 }
 
 istream & operator >> (istream &s, BudynekEdukacyjny &budynek)
 {
-	s >> budynek.numer;
+	s >> budynek.ileLatIstnieje;
 	return s;
 }
